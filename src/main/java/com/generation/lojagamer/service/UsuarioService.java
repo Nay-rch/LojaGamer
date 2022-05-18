@@ -32,7 +32,7 @@ public class UsuarioService {
 					HttpStatus.BAD_REQUEST, "Usuário é menor de 18 anos", null);
 		
 		if (usuario.getFoto().isBlank())
-				usuario.setFoto("https://i.imgur.com/Zz4rzVR.png");
+				usuario.setFoto("https://i.imgur.com/yOxNEig.jpg");
 
 		usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
@@ -54,7 +54,7 @@ public class UsuarioService {
 						HttpStatus.BAD_REQUEST, "Usuário é menor de 18 anos", null);
 			
 			if (usuario.getFoto().isBlank())
-				usuario.setFoto("https://i.imgur.com/Zz4rzVR.png");
+				usuario.setFoto("https://i.imgur.com/yOxNEig.jpg");
 			
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
